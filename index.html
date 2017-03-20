@@ -1,0 +1,1048 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <meta content="text/html" charset="utf-8" http-equiv="Content-Type" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="img/ICO.png">
+    <title>Qlab</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="css.css">
+            <script type="text/javascript" src="jquery-3.1.1.min.js"></script>
+  <script type="text/javascript" src="jquery-1.3.2.min.js"></script>
+  <script type="text/javascript" src="jquery.simplemodal.js"></script>
+<script type="text/javascript" src="init.js"></script>
+<script   type="text/javascript" src="MyScript.js">
+</script>
+
+<script>
+$(document).ready(function() {
+$(".on-exit").hide();
+$('.photo-four').hide();
+$('.photo-five').hide();
+$('.photo-six').hide();
+$('.hide-projects').hide();
+/*элементы которые первоначально скрыты*/
+
+$(".show-projects").click(function(){
+$(".photo-four").slideDown();
+$(".photo-five").slideDown();
+$(".photo-six").slideDown();
+$(".show-projects").hide();
+$('.hide-projects').fadeIn('slow');
+});
+/*по нажатию на кнопку все проекты появляются скрытые картинки, а кнопка исчезает*/
+$(".hide-projects").click(function(){
+$(".photo-four").slideUp();
+$(".photo-five").slideUp();
+$(".photo-six").slideUp();
+$(".hide-projects").hide();
+$('.show-projects').fadeIn('slow');
+});
+/*по нажатию на кнопку все проекты проекты исчезаютостаётся три проекта*/
+$(".photo-one-more").hide();
+$(".photo-two-more").hide();
+$(".photo-three-more").hide();
+$(".photo-four-more").hide();
+$(".photo-five-more").hide();
+$(".photo-six-more").hide();
+/*Катртинки большего размера(первоначальтно скрыты)*/
+$(".photos>.photo-one img").click(function(){
+$(".photo-one-more").slideDown();
+});
+$(".photos>.photo-two img").click(function(){
+$(".photo-two-more").slideDown();
+});
+$(".photos>.photo-three img").click(function(){
+$(".photo-three-more").slideDown();
+});
+$(".photos>.photo-four img").click(function(){
+$(".photo-four-more").slideDown();
+});
+$(".photos>.photo-five img").click(function(){
+$(".photo-five-more").slideDown();
+});
+$(".photos>.photo-six img").click(function(){
+$(".photo-six-more").slideDown();
+});
+/*по нажатию на кнопку, изображение всплывает в полном формате*/
+$(".photo-one-more>.close").click(function(){
+$(".photo-one-more").hide();
+});
+$(".photo-two-more>.close").click(function(){
+$(".photo-two-more").hide();
+});
+$(".photo-three-more>.close").click(function(){
+$(".photo-three-more").hide();
+});
+$(".photo-four-more>.close").click(function(){
+$(".photo-four-more").hide();
+});
+$(".photo-five-more>.close").click(function(){
+$(".photo-five-more").hide();
+});
+$(".photo-six-more>.close").click(function(){
+$(".photo-six-more").hide();
+});
+
+$(".photo-one-more2").hide();
+$(".photo-two-more2").hide();
+$(".photo-three-more2").hide();
+$(".photo-four-more2").hide();
+$(".photo-five-more2").hide();
+$(".photo-six-more2").hide();
+/*Катртинки большего размера(первоначальтно скрыты)*/
+$(".photos1>.photo-one img").click(function(){
+$(".photo-one-more2").slideDown();
+});
+$(".photos1>.photo-two img").click(function(){
+$(".photo-two-more2").slideDown();
+});
+$(".photos1>.photo-three img").click(function(){
+$(".photo-three-more2").slideDown();
+});
+$(".photos1>.photo-four img").click(function(){
+$(".photo-four-more").slideDown();
+});
+$(".photos1>.photo-five img").click(function(){
+$(".photo-five-more2").slideDown();
+});
+$(".photos1>.photo-six img").click(function(){
+$(".photo-six-more2").slideDown();
+});
+/*по нажатию на кнопку, изображение всплывает в полном формате*/
+$(".photo-one-more2>.close").click(function(){
+$(".photo-one-more2").hide();
+});
+$(".photo-two-more2>.close").click(function(){
+$(".photo-two-more2").hide();
+});
+$(".photo-three-more2>.close").click(function(){
+$(".photo-three-more2").hide();
+});
+$(".photo-four-more2>.close").click(function(){
+$(".photo-four-more2").hide();
+});
+$(".photo-five-more2>.close").click(function(){
+$(".photo-five-more2").hide();
+});
+$(".photo-six-more2>.close").click(function(){
+$(".photo-six-more2").hide();
+});
+
+$(".photo-one-more3").hide();
+$(".photo-two-more3").hide();
+$(".photo-three-more3").hide();
+$(".photo-four-more3").hide();
+$(".photo-five-more3").hide();
+$(".photo-six-more3").hide();
+/*Катртинки большего размера(первоначальтно скрыты)*/
+$(".photos2>.photo-one img").click(function(){
+$(".photo-one-more3").slideDown();
+});
+$(".photos2>.photo-two img").click(function(){
+$(".photo-two-more3").slideDown();
+});
+$(".photos2>.photo-three img").click(function(){
+$(".photo-three-more3").slideDown();
+});
+$(".photos2>.photo-four img").click(function(){
+$(".photo-four-more3").slideDown();
+});
+$(".photos2>.photo-five img").click(function(){
+$(".photo-five-more3").slideDown();
+});
+$(".photos2>.photo-six img").click(function(){
+$(".photo-six-more3").slideDown();
+});
+/*по нажатию на кнопку, изображение всплывает в полном формате*/
+$(".photo-one-more3>.close").click(function(){
+$(".photo-one-more3").hide();
+});
+$(".photo-two-more3>.close").click(function(){
+$(".photo-two-more3").hide();
+});
+$(".photo-three-more3>.close").click(function(){
+$(".photo-three-more3").hide();
+});
+$(".photo-four-more3>.close").click(function(){
+$(".photo-four-more3").hide();
+});
+$(".photo-five-more3>.close").click(function(){
+$(".photo-five-more3").hide();
+});
+$(".photo-six-more3>.close").click(function(){
+$(".photo-six-more3").hide();
+});
+
+$(".photo-one-more4").hide();
+$(".photo-two-more4").hide();
+$(".photo-three-more4").hide();
+$(".photo-four-more4").hide();
+$(".photo-five-more4").hide();
+$(".photo-six-more4").hide();
+/*Катртинки большего размера(первоначальтно скрыты)*/
+$(".photos3>.photo-one img").click(function(){
+$(".photo-one-more4").slideDown();
+});
+$(".photos3>.photo-two img").click(function(){
+$(".photo-two-more4").slideDown();
+});
+$(".photos3>.photo-three img").click(function(){
+$(".photo-three-more4").slideDown();
+});
+$(".photos3>.photo-four img").click(function(){
+$(".photo-four-more4").slideDown();
+});
+$(".photos3>.photo-five img").click(function(){
+$(".photo-five-more4").slideDown();
+});
+$(".photos3>.photo-six img").click(function(){
+$(".photo-six-more4").slideDown();
+});
+/*по нажатию на кнопку, изображение всплывает в полном формате*/
+$(".photo-one-more4>.close").click(function(){
+$(".photo-one-more4").hide();
+});
+$(".photo-two-more4>.close").click(function(){
+$(".photo-two-more4").hide();
+});
+$(".photo-three-more4>.close").click(function(){
+$(".photo-three-more4").hide();
+});
+$(".photo-four-more4>.close").click(function(){
+$(".photo-four-more4").hide();
+});
+$(".photo-five-more4>.close").click(function(){
+$(".photo-five-more4").hide();
+});
+$(".photo-six-more4>.close").click(function(){
+$(".photo-six-more4").hide();
+});
+/*по нажатию крестика, выходим из полномасштабного режима фото*/
+$(".clients_logo2").hide();
+/*второй сектор логотипов первоначально скрыт*/
+$(".show-logo").click(function(){
+$(".clients_logo2").slideToggle(1500);
+});
+/*показываем/сворачиваем скрытые логотипы в течении 0.5 сек. */
+/*
+$(".oursite").mouseover(function(){
+
+});*/
+
+/*кружок со стрелкой для перехода вверх первоначально скрыт, но появляется после пролистывания страницы вниз*/
+$(".online span").hide();
+$(".online").mouseover(function(){
+$(".online span").show(1500);
+});
+$(".wrap").mouseover(function(){
+$(".online span").hide();
+});
+
+$(".nav-top").hide();
+$(".QLAB, .contacts, .oursite, .service").mouseover(function(){
+$(".nav-top").fadeIn(2500);
+});
+//когда пользователь вернулся ввпех, кнопка опять исчезает
+$("header").mouseover(function(){
+$(".nav-top").hide();
+$("#ToDown").fadeIn(4000);
+});
+/*теперь пытаемся сделать секцию портфолио*/
+$(".photos1,.photos2,.photos3").hide();
+
+$(".web").click(function(){//когда нажимаем на первую. кнопку навигации
+$(".photos1,.photos2,.photos3").hide();
+$(".photos").show();
+});
+$(".seo").click(function(){//когда нажимаем на вторую кнопку навигации
+$(".photos,.photos2,.photos3").hide();
+$(".photos1").show();
+});
+$(".context").click(function(){//когда нажимаем на третью кнопку навигации
+$(".photos,.photos1,.photos3").hide();
+$(".photos2").show();
+});
+$(".config").click(function(){//когда нажимаем на четвёртую кнопку навигации
+$(".photos,.photos1,.photos2").hide();
+$(".photos3").show();
+});
+
+$("#ToDown").hide();
+$("#ToDown").fadeIn(5000);
+$("#ToDown").click(function(){
+$("#ToDown").hide();
+});
+//работаем над переключением слайдеров
+$(".SEO,.contecstes,.configur_1c").hide();
+$(".sub-menu .seo").click(function(){
+$(".SEO").show();
+$("nav,.contecstes,.configur_1c").hide();
+});
+$(".sub-menu .web").click(function(){
+$("nav").show();
+$(".SEO,.contecstes,.configur_1c").hide();
+});
+$(".sub-menu .context").click(function(){
+$(".contecstes").show();
+$(".SEO,nav,.configur_1c").hide();
+});
+$(".sub-menu .config").click(function(){
+$(".configur_1c").show();
+$(".SEO,nav,.contecstes").hide();
+});
+//анимируем менюшку
+$(".menu").hide();
+
+
+$(".service").one("mouseover",function(){
+$(".menu").slideDown(2000);
+});
+$(".service").one("mouseover",function(){
+$(".menu").slideDown(2000);
+});
+//работаем с секцией услуги
+
+
+});
+</script>
+<script type="text/javascript">
+//проверка заполнения формы
+function validate_form()
+{
+	valid = true;
+
+	if (document.contact_form.name.value=="")
+	{
+		alert("Пожалуйста заполните поле 'Ваше имя'.");
+		valid=false;
+	}
+	else if (document.contact_form.phone.value=="")
+	{
+		alert("Пожалуйста заполните поле 'Ваш телефон'.");
+		valid=false;
+	}
+		else if (document.contact_form.email.value=="")
+	{
+		alert("Пожалуйста заполните поле 'Ваш email'.");
+		valid=false;
+	}
+	$(".popup").show();
+	return valid;
+}
+</script>
+<script type="text/javascript">
+//проверка заполнения формы
+function validate_form1()
+{
+	valid = true;
+
+	if (document.contact_form1.contact_name1.value=="")
+	{
+		alert("Пожалуйста заполните поле 'Ваше имя'.");
+		valid=false;
+	}
+	else if (document.contact_form1.contact_phone1.value=="")
+	{
+		alert("Пожалуйста заполните поле 'Ваш телефон'.");
+		valid=false;
+	}
+		else if (document.contact_form1.contact_email1.value=="")
+	{
+		alert("Пожалуйста заполните поле 'Ваш email'.");
+		valid=false;
+	}
+	    else if (document.contact_form1.your_message.value=="")
+	{
+		alert("Сообщение не может быть пустым!!!");
+		valid=false;
+	}
+	return valid;
+}
+</script>
+
+</head>
+
+<body class="no-js">
+
+	<div class="online">
+		<div class="onlineImg">
+			<img src="img/telephone-symbol-button_icon-icons.com_73379.png" alt="HeadPhones">
+		</div>
+		<div class="onlineText"><a href="#win1" title="Заказать">Заказать звонок</a><br>
+<span>+375 29 357 24 24</span>
+<span>+375 33 357 24 24</span>
+		</div>
+	</div>
+
+
+   <div class="on-exit">
+
+    <div style="display: none; padding: 10px;" id="exit_content">  
+    
+ <h3>Уже уходишь?</h3>
+  <h3>У нас есть для тебя есть специальное предложение!!!</h3>
+
+
+</div>  
+
+</div>
+
+<!--первое модальное окно -->
+ <a href="#x" class="overlay" id="win1"></a>
+        <div class="popup">
+ 
+            <h1>ОБРАТНЫЙ ЗВОНОК</h1>
+		<p> </p>
+		<br>
+		
+		<div class="Name_phone_email">
+			
+			<form name="contact_form" method="post" action="send.php" onsubmit="return validate_form ();">
+
+			<input type="text" name="name" placeholder="Ваше Имя" title="Пожалуйста введите своё имя"><br>
+            <input type="number" name="phone" placeholder="Ваш телефон" title="Пожалуйста введите свой номер телефона"><br>
+            <input type="email" name="email" placeholder="Ваш email" title="Пожалуйста введите адрес своей электронной почты"><br>
+<button class="win_button" title="Заказать" name="send">ЗАКАЗАТЬ</button>
+</form>
+
+		</div>
+            <a class="close" title="Закрыть" href="#close"></a>
+        </div>
+
+<!--первое модальное окно -->
+         <a href="#x" class="overlay" id="win2"></a>
+        <div class="popup">
+          
+
+            <div class="oK"><h1>СООБЩЕНИЕ УСПЕШНО<br> ОТПРАВЛЕНО</h1></div>
+			
+           
+            <a class="close" title="Закрыть" href="#close"></a>
+        </div>
+
+
+<p><a name="top"></a><p>
+    <div class="main">
+        <header>
+
+  <div class="go-down" title="Ниже" id='ToDown'>
+     <a href="#oursite">⇓</a>
+      </div>
+
+            <div class="wrap">
+                <div class="header-wrapper">
+                  <div class="sale">
+                  <br>
+<span class="sales1">увеличим</span>
+<br>
+<span class="sales2">ваши продажи</span>
+ </div><p><a name="oursite"></a><p>
+ <div class="site">
+ <h1>РАЗРАБОТКА И ПРОДВИЖЕНИЕ САЙТОВ</h1><br>
+ <ul>
+   <li>СКИДКА НА РАЗРАБОТКУ И ПРОДВИЖЕНИЕ САЙТА 25% ДО КОНЦА НЕДЕЛИ</li>
+    <li>ГАРАНТИЯ НА ВСЕ ПРОЕКТЫ ОТ 1 ГОДА</li>
+     <li>САЙТ ЗА 5 ДНЕЙ</li>
+ </ul>
+ </div> 
+ <br>
+ <span class="b">ЗА 200 РУБ.</span>
+
+<div class="button1">
+  <a href="#win1" title="Заказать">заказать</a>
+</div>
+
+                </div>
+                <!-- /.header-wrapper -->
+    
+
+            </div>
+            <!-- /.wrap -->
+        </header>
+        <div class="spanning">
+
+        <div class="nav-top">
+     <a href="#top"><img  src="img/arrow_up.png" title="В НАЧАЛО СТРАНИЦЫ"></a>
+        </div>
+
+            <div id="QLAB" class="default">
+                <div class="wrap">
+                <img src="img/qlab.png" class="logo1" title="Qlab">
+                    
+          
+
+
+             <div class="menu-copy">
+<ul>
+     <li><a href="#service">
+            <div class="help" >услуги</div>
+            </a></li
+        ><li><a href="#action">
+            <div class="action">акции</div>
+            </a></li
+        ><li><a href="#portfolio">
+            <div class="potfolio">портфолио</div>
+            </a></li
+        ><li><a href="#otzivi">
+            <div class="otzivi">отзывы</div>
+</ul>
+</div>
+
+
+
+                </div>
+                <!-- /.wrap -->
+            </div>
+            <!--
+ <div class="contacts">
+<div class="wrap">
+<div class="button2">
+<a href="#win1" title="Заказать">заказать звонок</a>
+</div>
+<div class="numbers">
+<img class="phone" src='img/phone.png'> 
+<span class="number1" title="МТС">+375 29 357 24 24</span>
+<img class="phone" src='img/phone.png'> 
+<span class="number1" title="МТС">+375 33 357 24 24</span>
+</div>
+</div>
+</div>
+-->
+<div class="oursite">
+
+<div class="wrap">
+
+<div class="table1">
+  <div class="advantage"><h1>характеристики наших сайтов</h1>
+  <div class="setting">
+<img src="img/setting.png">
+  </div><hr>
+<ul>
+
+  <li>АДАПТИВНЫЙ ДИЗАЙН</li>
+  <li>УДОБНАЯ СИСТЕМА УПРАВЛЕНИЯ</li>
+  <li>ВСЕ ФУНКЦИИ ПОД ОПТИМИЗАЦИИ Google и Яндекс</li>
+  <li>ВЫСОКАЯ СКОРОСТЬ ЗАГРУЗКИ</li>
+  <li>СОВРЕМЕННЫЕ И РАСПРОСТРАНЕННЫЕ ТЕХНОЛОГИИ</li>
+
+  </ul>
+
+  </div>
+
+  <div class="features"> <h1>наши преимущества</h1>
+  <div class="like">
+<img src="img/like.png">
+</div><hr>
+<ul>
+
+  <li>БЕСПЛАТНАЯ ТЕХНИЧЕСКАЯ ПОДЕРЖКА</li>
+  <li>ТЕСТИРОВАНИЕ РЕЗУЛЬТАТОВ</li>
+  <li>КОМПЛЕКС УСЛУГ В ОДНОМ МЕСТЕ</li>
+  <li>ВСЕГДА НА СВЯЗИ И РАДЫ ВАШИМ ОБРАЩЕНИЯМ</li>
+  <li>ГИБКИЕ СХЕМЫ СОТРУДНИЧЕСТВА</li>
+
+</ul>
+  </div>
+</div>
+<p><a name="service"></a></p>
+</div>
+ </div>        
+  
+<div class="service">
+<div class="wrap">
+<br>
+<h1>УСЛУГИ <img src="img/note.png" ></h1>
+<br>
+<div class="OPTION1">
+<div class="option-one-1">
+	<h3>OPTION</h3>
+	<h2>01</h2>
+</div>
+<ul class="for-option-one">
+<li>ДИЗАЙН РЕКЛАМНЫХ МАТЕРИАЛОВ<br>
+(ЛИСТОВКИ, ФЛАЕРЫ, БАННЕРЫ, НАРУЖНАЯ РЕКЛАМА)</li>	
+<li>ЛОГОТИПЫ И ФИРМЕННЫЙ СТИЛЬ</li>	
+</ul>	
+<div class="option-one">
+</div>
+</div>
+<br>
+<div class="OPTION2">
+<div class="option-two-2">
+	<h3>OPTION</h3>
+	<h2>02</h2>
+</div>	
+<ul class="for-option-two">
+<li>ДИЗАЙН И РАЗРАБОТКА WEB-САЙТОВ</li>	
+<li>ПРОДВИЖЕНИЕ  САЙТОВ SEO, SMM</li>
+<li>ТЕХНИЧЕСКОЕ ОБСЛУЖИВАНИЕ РАБОЧИХ СТАНЦИЙ ПК<br>
+И ПЕРИФЕРИЙНОГО ОБОРУДОВАНИЯ</li>	
+</ul>	
+<div class="option-two">
+</div>
+</div>
+<br>
+<div class="OPTION3">
+<div class="option-three-3">
+	<h3>OPTION</h3>
+	<h2>03</h2>
+</div>	
+<ul class="for-option-three">
+<li>НАСТРОЙКА СЕРВЕРНОГО ОБОРУДОВАНИЯ</li>	
+<li>ПРОЕКТИРОВАНИЕ И РАЗВЕРТЫВАНИЕ СЕТЕЙ ОФИСНОЙ
+ТЕЛЕФОННОЙ СВЯЗИ</li>	
+</ul>
+<div class="option-three">
+</div></div>
+<br>
+<div class="OPTION4">
+<div class="option-four-4">
+	<h3>OPTION</h3>
+	<h2>04</h2>
+</div>	
+<ul class="for-option-four">
+<li>ПРОЕКТИРОВАНИЕ И РАЗВЕРТЫВАНИЕ СЕТЕЙ ВИДЕОНАБЛЮДЕНИЯ</li>	
+<li>УСТАНОВКА И НАСТРОЙКА 1С, РАБОТА С КОНФИГУРАТОРОМ</li>	
+</ul>
+<div class="option-four">	
+</div>
+<br>
+</div>
+</div>
+</div>
+   
+
+  <div class="work">
+
+<div class="wrap">
+
+<div class="sub-menu">
+<ul>
+     <li><a>
+            <div class="web">WEB разработка</div>
+            </a></li
+        ><li><a >
+            <div class="seo">SEO продвижение</div>
+            </a></li>
+            <li><a>
+            <div class="context">Контекстная реклама</div>
+            </a></li
+        ><li><a>
+            <div class="config">1С Конфигурирование</div></a></li>
+</ul>
+</div>
+
+<nav>
+<img src="img/consaption.png" width="" height="">
+<span class="consaption">Исследования и &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;концепции</span>
+<img src="img/ux.png" width="" height="" >
+<span class="ux">UX и проектирование</span>
+<img src="img/design.png" width="" height="">
+<span class="design">Дизайн</span>
+<img src="img/key.png" width="" height="">
+<span class="key">Дополнительный
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;дизайн</span>
+<img src="img/testing.png" width="" height=""> 
+<span class="testing">Верстка интеграция &nbsp;&nbsp;&nbsp;&nbsp;и
+тестирование</span>  
+ </nav>
+
+ <div class="SEO">	
+<img src="img/fases.png" width="" height="">
+<span class="frases">Расширенный список
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ключевых фраз</span>
+<img src="img/audit_2.png" width="" height="" >
+<span class="ux">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Аудит сайта</span>
+<img src="img/ux.png" width="" height="">
+<span class="in-optinization">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Внутренняя
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;оптимизация </span>
+<img src="img/out_optimization.png" width="" height="">
+<span class="key">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Внешняя
+&nbsp;&nbsp;оптимизация</span>
+<img src="img/otchet.png" width="" height=""> 
+<span class="testing">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ежемесечные
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;отчеты</span>
+<img src="img/analityc_of_results.png" class="" width="" height=""> 
+<span class="analytic">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Аналитика
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;результатов
+</span> 
+ </div>
+
+<div class="configur_1c">
+<img src="img/find.png" width="" height="">
+<span class="consaption">&nbsp;&nbsp;Исследование </span>
+<img src="img/create.png" width="" height="" >
+<span class="ux">Создание  проекта</span>
+<img src="img/proggrammist.png" width="" height="">
+<span class="design">&nbsp;&nbsp;Програмирование</span>
+<img src="img/test.png" width="" height="">
+<span class="key">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Тестирование</span>
+ </div>
+
+<div class="contecstes">
+<img src="img/concurents.png" width="" height="">
+<span class="consaption">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Исследование
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;конкурентов </span>
+<img src="img/case.png" width="" height="" >
+<span class="ux">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Сбор ключевых<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;фраз</span>
+<img src="img/optim.png" width="" height="">
+<span class="design">Оптимизация сайта</span>
+<img src="img/make_company.png" width="" height="">
+<span class="key">Настройка и запуск
+рекламной компании</span>
+ </div>
+
+
+
+</div>
+</div>
+
+<div class="free">
+<p><a name="action"></a></p>
+<div class="wrap">
+
+<div class="free1">
+  <h1>АКЦИИ</h1>
+</div>  
+
+<div class="sales">
+
+<div class="sale1">
+
+<h1>сайт - визитка</h1>	
+
+<div class="vizitka" title="сайт - визитка"></div>
+
+<div class="service-for-you">
+	
+<ul>
+	<br>
+<li>Система управления МоdХ</li><hr>	
+<li>Домен на 1 год</li><hr>
+<li>Наполнение 5 страниц</li><hr>
+<li>Хостинг на 1 месяц</li><hr>
+<li>Подключение и настройка<br>
+Яндекс Метрики</li><hr>
+<li>Обучение работы с СМS</li><hr>
+
+</ul>
+
+<div class="ot">
+
+	<span class="OT">ОТ</span> <span class="size">200</span> 	<span class="OT">рублей за</span><span class="days">  3 </span>  <span class="OT">дня</span>
+
+</div>
+
+<button class="knopka" title="от 200 рублей">
+ЗАКАЗАТЬ
+</button>
+
+</div>
+
+
+
+</div> 
+
+<div class="sale2">
+
+<h1>сайт - с каталогом</h1>	
+	
+<div class="katalog" title="сайт - с каталогом"></div>
+
+<div class="service-for-you1">
+
+<ul>
+	<br>
+<li>Система управления МоdХ</li><hr>	
+<li>Домен на 1 год</li><hr>
+<li>Наполнение 5 страниц</li><hr>
+<li>Хостинг на 1 месяц</li><hr>
+<li>Подключение и настройка<br>
+Яндекс Метрики</li><hr>
+<li>Обучение работы с СМS</li><hr>
+
+
+</ul>
+
+<div class="ot">
+
+	<span class="OT">ОТ</span> <span class="size">450</span> 	<span class="OT">рублей за</span><span class="days">  5 </span>  <span class="OT">дней</span>
+
+</div>
+
+<button class="knopka" title="от 450 рублей">
+ЗАКАЗАТЬ
+</button>
+
+</div>
+
+</div> 
+
+<div class="sale3">
+
+<div class="serch-optimization" title="ПОИСКОВАЯ ОПТИМИЗАЦИЯ">
+<h1>ПОИСКОВАЯ
+ОПТИМИЗАЦИЯ</h1>
+
+<div class="uzabiliti">
+<p>Юзабилити - удобство пользования<br>
+для посетителей</p>
+<p>Технически - исправление всех<br>
+ошибок</p>
+</div>
+
+<div class="skidka">
+<span class="skidka1">скидка</span>
+<span class="skidka2">20%</span>
+</div>
+
+<button class="knopka" title="скидка 20%" >
+ЗАКАЗАТЬ
+</button>
+
+
+</div>
+
+<div class="audit" title="АУДИТ САЙТА">
+	
+	<h1>АУДИТ САЙТА</h1>
+
+<div class="uzabiliti">
+<p>Юзабилити - удобство пользования<br>
+для посетителей</p>
+<p>Технически - исправление всех<br>
+ошибок</p>
+</div>
+
+<div class="skidka">
+<br><br><br><br>
+<span class="no-pay">БЕСПЛАТНО!</span>
+
+</div>
+
+<button class="knopka" title="БЕСПЛАТНО">
+ЗАКАЗАТЬ
+</button>
+
+
+</div>
+
+</div> 
+
+
+</div>
+
+
+	
+
+</div>
+
+</div>
+</div>
+
+<div class="portfolio1">
+
+<div class="wrap">
+	
+	<img src="img/qlab.png"  class="logo2" title="Qlab">
+    <h1>портфолио</h1>
+
+</div>
+
+
+</div>
+<p><a name="portfolio"></a></p>	
+<div class="portfolio2">
+	
+<div class="wrap">
+	
+<div class="sub-menu">
+<ul>
+     <li><a>
+            <div class="web">WEB разработка</div>
+            </a></li
+        ><li><a>
+            <div class="seo">SEO продвижение</div>
+            </a></li
+        ><li><a>
+            <div class="context">Контекстная реклама</div>
+            </a></li
+        ><li><a>
+            <div class="config">1С Конфигурирование</div></a></li>
+</ul>
+</div>
+
+<div class="photos">
+	<div class="photo-one"><span class="PHOTO"><img  title="Показать в полном размере" src="portfolio/ace96279c5e24374bdafd46486cda9d4-preview.png"></span>
+	<p>Дари подарки</p></div>
+	<div class="photo-two"><span class="PHOTO"><img  title="Показать в полном размере" src="portfolio/7d865c1ca2694be49e2a84a798fb1c18-preview.png"></span><p>Dessert</p></div>
+	<div class="photo-three"><span class="PHOTO"><img  title="Показать в полном размере" src="portfolio/b8e2d6b69a5f46c4b68227a75129eb7e-preview.png"></span><p >Portfolio</p></div>
+	<div class="photo-four"><span class="PHOTO">
+	<img  title="Показать в полном размере" src="portfolio/ad6579e0538a404ab83b5b1939b43925-preview.png"></span><p >CSS</p></div>
+	<div class="photo-five"><span class="PHOTO"><img  title="Показать в полном размере" src="portfolio/dcef4c98a65b487790a36af195ffcebe-preview.png"></span><p >Product</p></div>
+	<div class="photo-six"><span class="PHOTO"><img  title="Показать в полном размере" src="portfolio/images.jpg"></span><p >Product2</p></div>
+</div>
+
+<div class="photos1">
+	<div class="photo-one"><span class="PHOTO"><img  title="Показать в полном размере" src="portfolio/"></span>
+	<p>Название проекта</p></div>
+	<div class="photo-two"><span class="PHOTO"><img  title="Показать в полном размере" src="portfolio/"></span><p>Название проекта</p></div>
+	<div class="photo-three"><span class="PHOTO"><img  title="Показать в полном размере" src="portfolio/"></span><p>Название проекта</p></div>
+	<div class="photo-four"><span class="PHOTO">
+	<img  title="Показать в полном размере" src="portfolio/"></span><p>Название проекта</p></div>
+	<div class="photo-five"><span class="PHOTO"><img  title="Показать в полном размере" src="portfolio/"></span><p>Название проекта</p></div>
+	<div class="photo-six"><span class="PHOTO"><img  title="Показать в полном размере" src="portfolio/"></span><p>Название проекта</p></div>
+</div>
+
+<div class="photos2">
+	<div class="photo-one"><span class="PHOTO"><img  title="Показать в полном размере" src="portfolio/"></span>
+	<p>Название проекта</p></div>
+	<div class="photo-two"><span class="PHOTO"><img  title="Показать в полном размере" src="portfolio/"></span><p>Название проекта</p></div>
+	<div class="photo-three"><span class="PHOTO"><img  title="Показать в полном размере" src="portfolio/"></span><p>Название проекта</p></div>
+	<div class="photo-four"><span class="PHOTO">
+	<img  title="Показать в полном размере" src="portfolio/"></span><p>Название проекта</p></div>
+	<div class="photo-five"><span class="PHOTO"><img  title="Показать в полном размере" src="portfolio/"></span><p>Название проекта</p></div>
+	<div class="photo-six"><span class="PHOTO"><img  title="Показать в полном размере" src="portfolio/"></span><p>Название проекта</p></div>
+</div>
+
+<div class="photos3">
+	<div class="photo-one"><span class="PHOTO"><img  title="Показать в полном размере" src=""></span>
+	<p>Название проекта</p></div>
+	<div class="photo-two"><span class="PHOTO"><img  title="Показать в полном размере" src=""></span><p>Название проекта</p></div>
+	<div class="photo-three"><span class="PHOTO"><img  title="Показать в полном размере" src=""></span><p>Название проекта</p></div>
+	<div class="photo-four"><span class="PHOTO">
+	<img  title="Показать в полном размере" src="img/"></span><p>Название проекта</p></div>
+	<div class="photo-five"><span class="PHOTO"><img  title="Показать в полном размере" src="img/"></span><p>Название проекта</p></div>
+	<div class="photo-six"><span class="PHOTO"><img  title="Показать в полном размере" src="img/"></span><p>Название проекта</p></div>
+</div>
+
+<!--Для того чтобы работало увеличение картинки по кнопке, картинки в видимом блок должны совпадать с картинками, которые первоначально скрыты-->
+<div class="photo-one-more"><img src="portfolio/ace96279c5e24374bdafd46486cda9d4-preview.png"><a class="close" title="Закрыть" href="#close"></a></div>
+<div class="photo-two-more"><img src="portfolio/7d865c1ca2694be49e2a84a798fb1c18-preview.png"><a class="close" title="Закрыть" href="#close"></a></div>
+<div class="photo-three-more"><img src="portfolio/b8e2d6b69a5f46c4b68227a75129eb7e-preview.png"><a class="close" title="Закрыть" href="#close"></a></div>
+<div class="photo-four-more"><img src="portfolio/ad6579e0538a404ab83b5b1939b43925-preview.png"><a class="close" title="Закрыть" href="#close"></a></div>
+<div class="photo-five-more"><img src="portfolio/dcef4c98a65b487790a36af195ffcebe-preview.png"><a class="close" title="Закрыть" href="#close"></a></div>
+<div class="photo-six-more"><img src="portfolio/images.jpg"><a class="close" title="Закрыть" href="#close"></a></div>
+
+<div class="photo-one-more2"><img src="portfolio/"><a class="close" title="Закрыть" href="#close"></a></div>
+<div class="photo-two-more2"><img src="portfolio/"><a class="close" title="Закрыть" href="#close"></a></div>
+<div class="photo-three-more2"><img src="portfolio/"><a class="close" title="Закрыть" href="#close"></a></div>
+<div class="photo-four-more2"><img src="portfolio/"><a class="close" title="Закрыть" href="#close"></a></div>
+<div class="photo-five-more2"><img src="portfolio/"><a class="close" title="Закрыть" href="#close"></a></div>
+<div class="photo-six-more2"><img src="portfolio/"><a class="close" title="Закрыть" href="#close"></a></div>
+
+<div class="photo-one-more3"><img src="portfolio/"><a class="close" title="Закрыть" href="#close"></a></div>
+<div class="photo-two-more3"><img src="portfolio/"><a class="close" title="Закрыть" href="#close"></a></div>
+<div class="photo-three-more3"><img src="portfolio/"><a class="close" title="Закрыть" href="#close"></a></div>
+<div class="photo-four-more3"><img src="portfolio/"><a class="close" title="Закрыть" href="#close"></a></div>
+<div class="photo-five-more3"><img src="portfolio/"><a class="close" title="Закрыть" href="#close"></a></div>
+<div class="photo-six-more3"><img src="portfolio/"><a class="close" title="Закрыть" href="#close"></a></div>
+
+<div class="photo-one-more4"><img src="portfolio/"><a class="close" title="Закрыть" href="#close"></a></div>
+<div class="photo-two-more4"><img src="portfolio/"><a class="close" title="Закрыть" href="#close"></a></div>
+<div class="photo-three-more4"><img src="portfolio/"><a class="close" title="Закрыть" href="#close"></a></div>
+<div class="photo-four-more4"><img src="portfolio/"><a class="close" title="Закрыть" href="#close"></a></div>
+<div class="photo-five-more4"><img src="portfolio/"><a class="close" title="Закрыть" href="#close"></a></div>
+<div class="photo-six-more4"><img src="portfolio/"><a class="close" title="Закрыть" href="#close"></a></div>
+
+
+<span class="show-projects">все проекты(показать)</span>
+<span class="hide-projects">все проекты(скрыть)</span>
+
+</div>
+</div>
+
+<div class="clients">
+<div class="wrap">
+
+<h1>наши клиенты</h1>
+
+<div class="clients_logo1">	
+<img src="logo/logo-life.png">
+<img src="logo/logo-mts.png">
+<img src="logo/logo-byfly.jpg">
+</div>
+
+<div class="clients_logo2">	
+<img src="logo/logo-priorbank.png">
+<img src="logo/logo-tut-by.png">
+<img src="logo/ozon.png">
+</div>
+
+<span class="show-logo" title="показать/скрыть логотипы">все логотипы</span>
+
+</div>
+</div>
+
+<div class="otzivi">
+<p><a name="otzivi"></a></p>	
+<div class="wrap"> 
+
+<h1>отзывы</h1>
+
+<div class="photo_of_project"><br><br><span>фото</span></div>
+<span class="name_of_project">Название проекта</span>
+
+<div class="video">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/6ms37eXh9v8" frameborder="0" allowfullscreen></iframe>
+</div>
+
+</div>
+</div>
+
+        <!-- /.spanning-columns -->
+
+      <div class="comment">
+
+<div class="wrap">
+<article>         
+<h1>сотрудничать с нами просто</h1>
+<p>
+Напишите нам, расскажите о своем бизнесе, задачах и планах.<br>
+Мы изучим ваш проект, свяжемся с вами и изучим все задачи.<br>
+Deadlin?<span class="telephone"> Звоните по телефону: <span class="zvoni" title="Звони">+7 495 162 66 99</span><br></span>
+<span class="our_email">Наша почта:<span class="zvoni" title="Наша почта">info@qlab.by</span></span><br>
+<span class="our_skype">Наш skype:<span class="zvoni" title="Наш skype">QLABBY</span></span>
+<br>
+<span class="zvoni" title="Вконтакте"><a class="vk" href="https://vk.com/qlabby">Мы во Вконтакте</a></span>
+</p>
+</article>
+
+		<div class="chat">
+			
+			<form name="contact_form1" method="post" action="dumb.htm" onsubmit="return validate_form1 ();">
+
+			<input type="text" name="contact_name1" placeholder="Ваше Имя" title="Пожалуйста введите своё имя"><br>
+            <input type="number" name="contact_phone1" placeholder="Ваш телефон" title="Пожалуйста введите свой номер телефона"><br>
+            <input type="email" name="contact_email1" placeholder="Ваш email" title="Пожалуйста введите адрес своей электронной почты"><br>
+            <textarea placeholder="Сообщение" name="your_message"></textarea>
+<button class="for_chat" title="Отправить" name="send">ОТПРАВИТЬ</button>
+</form>
+<div class="file">		
+<input type="file" name="file"  title="Прикрепить файл(до 1mb,jpg/pdf/doc/txt)">
+<p>до 1mb,jpg/pdf/doc/txt</p>
+</div>
+
+		</div>
+
+ 
+      </div>
+      </div>  
+
+    </div>
+    <!-- /.main -->
+    <footer>
+        <div class="wrap">
+          <br>
+
+<span >2017</span>
+        </div>
+        <!-- /.wrap -->
+    </footer>
+
+</body>
+</html>
